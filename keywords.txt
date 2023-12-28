@@ -1,0 +1,7 @@
+CrazyHC595	KEYWORD1
+
+update	KEYWORD2
+send_byte	KEYWORD2
+write_pin	KEYWORD2
+clear	KEYWORD2
+get_pin	KEYWORD2
