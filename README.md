@@ -1,4 +1,4 @@
-[![latest](https://img.shields.io/github/v/release/Crazy-Max-Blog/CrazyHC595.svg?color=brightgreen)](https://github.com/Crazy-Max-Blog/CrazyHC595/releases/latest/download/CrazyHC595.zip)
+[![latest](https://img.shields.io/github/v/release/Crazy-Max-Blog/CrazyHC595.svg?color=brightgreen)](https://codeload.github.com/Crazy-Max-Blog/CrazyHC595/zip/refs/heads/main)
 # CrazyHC595
 Библиотека для сдвигового регистра 74HC595
 # Установка
