@@ -46,8 +46,8 @@
 - Пин Q7S *первой микросхемы* подключается к DS второй микросхемы, и так далее по цепочке
 
 ## Инициализация
+<!--Crazy74HC595 hc(dataPin, latchPin, clockPin);// создание экземпляра с названием hc и пинами dataPin, latchPin, clockPin-->
 ```cpp
-Crazy74HC595 hc(dataPin, latchPin, clockPin);//создание экземпляра с названием hc и пинами dataPin, latchPin, clockPin
 CrazyHC595(byte dataPin, byte latchPin, byte clockPin) //конструктор с пинами dataPin, latchPin, clockPin
 ```
 
@@ -67,20 +67,28 @@ byte buf=0b00000000;                 // буфер
 ## Пример
 Остальные примеры смотри в **examples**!
 ```cpp
-#include <GyverHC595.h>
+#include <CrazyHC595.h>
 
-GyverHC595<2, HC_SPI, 8000000> reg(10); // аппаратный SPI, кастомная скорость
-//GyverHC595<2, HC_PINS> reg(10, 11, 13); // программный SPI (bit bang)
+//Crazy74HC595 hc(dataPin, latchPin, clockPin);// создание экземпляра с названием hc и пинами dataPin, latchPin, clockPin
+CrazyHC595 hc(2,3,4);
 
 void setup() {
-  reg.set(0);       // включить пин 0
-  reg.write(8, 1);  // включить пин 8
-  reg.write(8, 0);  // выключить пин 8
-  
-  reg.update();     // обновить
+  Serial.begin(115200);
 }
 
 void loop() {
+  // Async blink
+  static long timer;
+  if(millis()-timer>=100) {
+    timer=millis();
+    hc.write_pin(0, !hc.get_pin(0));
+  }
+  
+  //  Sync blink
+  //hc.write_pin(0, HIGH);
+  //delay(100);
+  //hc.write_pin(0, LOW);
+  //delay(100);
 }
 ```
 
