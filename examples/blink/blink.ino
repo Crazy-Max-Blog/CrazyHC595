@@ -1,6 +1,6 @@
 #include <CrazyHC595.h>
 
-//CrazyHC595 hc(dataPin, latchPin, clockPin);
+//Crazy74HC595 hc(dataPin, latchPin, clockPin);// создание экземпляра с названием hc и пинами dataPin, latchPin, clockPin
 CrazyHC595 hc(2,3,4);
 
 void setup() {
