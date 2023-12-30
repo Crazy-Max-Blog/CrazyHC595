@@ -39,6 +39,7 @@ public:
 
   // VARS
   byte buf=0b00000000; // buffer
+
 protected:
   
 private:
