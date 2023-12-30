@@ -1,5 +1,6 @@
 [![latest](https://img.shields.io/github/v/release/Crazy-Max-Blog/CrazyHC595.svg?color=brightgreen)](https://codeload.github.com/Crazy-Max-Blog/CrazyHC595/zip/refs/heads/main)
 [![Foo](https://img.shields.io/badge/page-on%20website-blue.svg?style=flat-square)](https://crazymax.is-a.dev/CrazyHC595/)
+[![Foo](https://img.shields.io/badge/page-on%20github-blue.svg?style=flat-square)](https://github.com/Crazy-Max-Blog/CrazyHC595/)
 
 [![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА%20ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/CrazyLibs_updates)
 
