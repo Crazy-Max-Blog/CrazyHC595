@@ -30,8 +30,7 @@ public:
   }
 
   void clear() {
-    buf=0xFF;
-    update();
+    send_byte(0x00);
   }
 
   bool get_pin(byte pin) {
