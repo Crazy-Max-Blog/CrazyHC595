@@ -1,7 +1,6 @@
 #include <CrazyHC595.h>
 
-//Crazy74HC595 hc(dataPin, latchPin, clockPin);// создание экземпляра с названием hc и пинами dataPin, latchPin, clockPin
-CrazyHC595 hc(2,3,4);
+CrazyHC595 hc(2,3,4);// создание экземпляра с названием hc и пинами по порядку: dataPin, latchPin, clockPin
 
 void setup() {
   Serial.begin(115200);
